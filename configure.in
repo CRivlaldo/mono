@@ -2449,6 +2449,17 @@ if test "x$host" != "x$target"; then
 		# in mono-compiler.h
 		with_tls=pthread
 		;;
+####!!!!vladimir
+	arm*-darwin*)
+		TARGET=ARM;
+		arch_target=arm;
+		AC_DEFINE(TARGET_ARM, 1, [...])
+		ACCESS_UNALIGNED="no"
+		CPPFLAGS="$CPPFLAGS -DARM_FPU_NONE=1 -D__ARM_EABI__ -DHAVE_ARMV7=1"
+		# libgc's gc_locks.h depends on this
+	    NESTED_LIBGC_FLAGS="$NESTED_LIBGC_FLAGS -DHAVE_ARMV7"
+		with_tls=pthread
+		;;
 	*)
 		AC_MSG_ERROR([Cross compiling is not supported for target $target])
 	esac
