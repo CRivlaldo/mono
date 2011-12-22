@@ -53,11 +53,12 @@ moon-do-clean:
 	-test -z "libmonoruntimemoon.la" || rm -f libmonoruntimemoon.la
 endif
 
-if SHARED_MONO
+####!!!!vladimir
+#if SHARED_MONO
 if SUPPORT_BOEHM
 shared_libraries = libmonoruntime.la
 endif
-endif
+#endif
 noinst_LTLIBRARIES =  $(shared_libraries) libmonoruntime-static.la $(sgen_libraries) $(moonlight_libraries)
 
 INCLUDES = -I$(top_srcdir) -I$(top_srcdir)/mono $(LIBGC_CFLAGS) $(GLIB_CFLAGS) -DMONO_BINDIR=\"$(bindir)/\" -DMONO_ASSEMBLIES=\"$(assembliesdir)\" -DMONO_CFG_DIR=\"$(confdir)\"
