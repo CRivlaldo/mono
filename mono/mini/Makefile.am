@@ -45,7 +45,7 @@ sgenstatic_libs = \
 	$(monodir)/mono/utils/libmonoutils.la \
 	$(GLIB_LIBS) $(LIBICONV)
 
-CLASS=$(mcs_topdir)/class/lib/net_4_5
+CLASS=$(mcs_topdir)/class/lib/net_4_0
 
 RUNTIME_EXECUTABLE = $(if $(SGEN),$(top_builddir)/mono/mini/mono-sgen,$(top_builddir)/runtime/mono-wrapper)
 
@@ -108,9 +108,10 @@ endif
 
 noinst_PROGRAMS = genmdesc
 
-if SHARED_MONO
+####!!!!vladimir
+#if SHARED_MONO
 shared_libraries = $(boehm_libraries) $(sgen_libraries)
-endif
+#endif
 
 lib_LTLIBRARIES = $(shared_libraries)
 noinst_LTLIBRARIES = libmono-static.la $(sgen_static_libraries)
