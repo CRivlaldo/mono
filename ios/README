@@ -1,0 +1,8 @@
+Instructions
+------------
+1. If this is a clean checkout, you may need to do this from /path/to/mono:
+  ./autogen.sh --enable-nls=no && make distclean
+
+2. Run ./ios-install-all.sh to install:
+  *) iOS Mono AOT compiler (ios-mono)
+  *) iOS Mono static lib (ios-runtime-mono)
