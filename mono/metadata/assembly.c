@@ -135,7 +135,8 @@ static const AssemblyVersionMap framework_assemblies [] = {
 static GList *loaded_assemblies = NULL;
 static MonoAssembly *corlib;
 
-#if defined(__native_client__)
+////!!!!vladimir
+#if defined(__native_client__) || defined(IPHONEOS)
 
 /* On Native Client, allow mscorlib to be loaded from memory  */
 /* instead of loaded off disk.  If these are not set, default */
@@ -2693,7 +2694,7 @@ mono_assembly_load_corlib (const MonoRuntimeInfo *runtime, MonoImageOpenStatus *
 		return corlib;
 	}
 
-#if defined(__native_client__)
+#if defined(__native_client__) || defined(IPHONEOS)
 	if (corlibData != NULL && corlibSize != 0) {
 		int status = 0;
 		/* First "FALSE" instructs mono not to make a copy. */
