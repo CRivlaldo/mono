@@ -6887,18 +6887,22 @@ emit_file_info (MonoAotCompile *acfg)
 
 #if defined (TARGET_ARM) && defined (__APPLE__)
        {
-               MonoType t;
-               int align = 0;
+				////!!!!vladimir
+				emit_int32 (acfg, 4);
+				emit_int32 (acfg, 4);
 
-               t.type = MONO_TYPE_R8;
-               mono_type_size (&t, &align);
+               // MonoType t;
+               // int align = 0;
 
-               emit_int32 (acfg, align);
+               // t.type = MONO_TYPE_R8;
+               // mono_type_size (&t, &align);
 
-               t.type = MONO_TYPE_I8;
-               mono_type_size (&t, &align);
+               // emit_int32 (acfg, align);
 
-               emit_int32 (acfg, align);
+               // t.type = MONO_TYPE_I8;
+               // mono_type_size (&t, &align);
+
+               // emit_int32 (acfg, align);
        }
 #else
 	emit_int32 (acfg, __alignof__ (double));
@@ -7102,6 +7106,9 @@ compile_asm (MonoAotCompile *acfg)
 #define AS_OPTIONS "-xarch=v9"
 #elif defined(TARGET_X86) && defined(__APPLE__) && !defined(__native_client_codegen__)
 #define AS_OPTIONS "-arch i386 -W"
+////!!!!vladimir
+#elif defined(TARGET_ARM)
+#define AS_OPTIONS "-arch armv7"
 #else
 #define AS_OPTIONS ""
 #endif

@@ -1610,7 +1610,7 @@ load_aot_module (MonoAssembly *assembly, gpointer user_data)
 	 * non-lazily, since we can't handle out-of-date errors later.
 	 * The cached class info also depends on the exact assemblies.
 	 */
-#if defined(__native_client__)
+#if defined(__native_client__) || defined(IPHONEOS)
 	/* TODO: Don't 'load_image' on mscorlib due to a */
 	/* recursive loading problem.  This should be    */
 	/* removed if mscorlib is loaded from disk.      */
