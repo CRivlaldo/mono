@@ -79,3 +79,5 @@ ios/test/MonoTest/MonoTest/bin/Release/MonoRuntime/lib/mono/gac/System.Windows.F
 ios/test/MonoTest/MonoTest/bin/Release/MonoRuntime/lib/mono/gac/System.Security/4.0.0.0__b03f5f7f11d50a3a/.DS_Store
 
 ios/test/MonoTest/MonoTest/bin/Release/MonoRuntime/lib/mono/gac/System.Drawing/4.0.0.0__b03f5f7f11d50a3a/.DS_Store
+
+ios/.DS_Store
