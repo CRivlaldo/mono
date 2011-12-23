@@ -1,11 +1,30 @@
+Introduction
+------------
+
+This is mono-fork for iOS which can built and run on the Mac OS X.
+That includes mono cross-compiller and static mono lib building scripts.
+For using mono on iOS you can only use full-aot static compillation.
+
+Requirements
+------------
+
+For building my C# sample you need MonoDevelop.
+For building iOS-app sample you need 
+	* Apple Develop Program membership
+	* XCode
+	* iOS SDK
+
+Also you need install Mono Runtime 4.0 dlls (gac + mscorlib.dll) into
+/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/mono
+
 Instructions
 ------------
 1. If this is a clean checkout, you may need to do this from /path/to/mono:
-  ./autogen.sh --enable-nls=no && make distclean
+	./autogen.sh --enable-nls=no && make distclean
 
 2. Run ./ios-install-all.sh to install:
-  *) iOS Mono AOT compiler (ios-mono)
-  *) iOS Mono static lib (ios-runtime-mono)
+	* iOS Mono AOT compiler (ios-mono)
+	* iOS Mono static lib (ios-runtime-mono)
 
 3. For full-aot compilation gac and mscorlib.dll run:
 	cd test/BuildScripts
