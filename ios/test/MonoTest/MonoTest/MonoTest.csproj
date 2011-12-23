@@ -29,6 +29,8 @@
     <ConsolePause>false</ConsolePause>
     <CustomCommands>
       <CustomCommands>
+        <Command type="AfterBuild" command="rm -f ${TargetName}.o" workingdir="${TargetDir}" />
+        <Command type="AfterBuild" command="rm -f ${TargetName}.a" workingdir="${TargetDir}" />
         <Command type="AfterBuild" command="/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin-mono --debug --aot=full,static,nodebug,outfile=${TargetName}.o ${TargetFile}" workingdir="${TargetDir}" />
         <Command type="AfterBuild" command="ar rcs ${TargetName}.a ${TargetName}.o" workingdir="${TargetDir}" />
       </CustomCommands>
