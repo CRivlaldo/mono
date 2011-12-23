@@ -6,3 +6,12 @@ Instructions
 2. Run ./ios-install-all.sh to install:
   *) iOS Mono AOT compiler (ios-mono)
   *) iOS Mono static lib (ios-runtime-mono)
+
+3. For full-aot compilation gac and mscorlib.dll run:
+	cd test/BuildScripts
+	./aotGac.sh
+	./aotMscorlib.sh
+
+4. For building (assembly + full-aot) MonoTest.dll sample open and rebuild MonoTest/MonoTest.sln with MonoDevelop.
+
+5. For building and runing sample iOS-app use XCode-project iOSMonoTest/iOSMonoTest.xcodeproj.
