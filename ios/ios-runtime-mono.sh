@@ -5,7 +5,7 @@ readonly MONO_TRUNK_IOS=$(pwd)
 source common.sh
 
 readonly PACKAGE_NAME=runtime-build
-readonly INSTALL_PATH=${MONO_TRUNK_IOS}/../install
+readonly INSTALL_PATH=${MONO_TRUNK_IOS}/mono-runtime-install
 
 ONLY_MAKE=0
 
