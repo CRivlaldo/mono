@@ -1,0 +1,9 @@
+prefix=/Users/vladimirvlasov/src/mono/ios/mono-runtime-install
+exec_prefix=/Users/vladimirvlasov/src/mono/ios/mono-runtime-install
+libdir=/Users/vladimirvlasov/src/mono/ios/mono-runtime-install/lib
+sourcesdir=${libdir}/monodoc/sources
+
+Name: Monodoc
+Description: Monodoc - Mono Documentation Tools
+Version: 2.11
+Libs: /r:${prefix}/lib/mono/monodoc/monodoc.dll 

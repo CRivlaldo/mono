@@ -1,0 +1,2 @@
+#!/bin/sh
+exec /Users/vladimirvlasov/src/mono/ios/mono-runtime-install/bin/mono $MONO_OPTIONS /Users/vladimirvlasov/src/mono/ios/mono-runtime-install/lib/mono/4.5/mono-cil-strip.exe "$@"
