@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50FD3B8114A34B6E00294B77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3B8014A34B6E00294B77 /* UIKit.framework */; };
+		50FD3B8314A34B6E00294B77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3B8214A34B6E00294B77 /* Foundation.framework */; };
+		50FD3B8914A34B6E00294B77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50FD3B8714A34B6E00294B77 /* InfoPlist.strings */; };
+		50FD3B8B14A34B6E00294B77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD3B8A14A34B6E00294B77 /* main.m */; };
+		50FD3B8F14A34B6E00294B77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD3B8E14A34B6E00294B77 /* AppDelegate.m */; };
+		50FD3B9814A3763500294B77 /* libgac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3B9514A3763300294B77 /* libgac.a */; };
+		50FD3B9914A3763700294B77 /* MonoTest.dll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3B9614A3763300294B77 /* MonoTest.dll.a */; };
+		50FD3B9A14A3763700294B77 /* mscorlib.dll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3B9714A3763300294B77 /* mscorlib.dll.a */; };
+		50FD3B9C14A3767A00294B77 /* MonoRuntime in Resources */ = {isa = PBXBuildFile; fileRef = 50FD3B9B14A3767A00294B77 /* MonoRuntime */; };
+		50FD3B9E14A376C800294B77 /* MonoTest.dll in Resources */ = {isa = PBXBuildFile; fileRef = 50FD3B9D14A376C800294B77 /* MonoTest.dll */; };
+		50FD3BA814A3B8FA00294B77 /* libmono-2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3BA714A3B8F900294B77 /* libmono-2.0.a */; };
+		50FD3BAA14A3BAF200294B77 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD3BA914A3BAF200294B77 /* libiconv.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50FD3B7C14A34B6E00294B77 /* iOSMonoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMonoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FD3B8014A34B6E00294B77 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50FD3B8214A34B6E00294B77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50FD3B8614A34B6E00294B77 /* iOSMonoTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSMonoTest-Info.plist"; sourceTree = "<group>"; };
+		50FD3B8814A34B6E00294B77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50FD3B8A14A34B6E00294B77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50FD3B8C14A34B6E00294B77 /* iOSMonoTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSMonoTest-Prefix.pch"; sourceTree = "<group>"; };
+		50FD3B8D14A34B6E00294B77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50FD3B8E14A34B6E00294B77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50FD3B9514A3763300294B77 /* libgac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgac.a; path = ../MonoTest/MonoTest/bin/Release/libgac.a; sourceTree = "<group>"; };
+		50FD3B9614A3763300294B77 /* MonoTest.dll.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = MonoTest.dll.a; path = ../MonoTest/MonoTest/bin/Release/MonoTest.dll.a; sourceTree = "<group>"; };
+		50FD3B9714A3763300294B77 /* mscorlib.dll.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = mscorlib.dll.a; path = ../MonoTest/MonoTest/bin/Release/mscorlib.dll.a; sourceTree = "<group>"; };
+		50FD3B9B14A3767A00294B77 /* MonoRuntime */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MonoRuntime; path = ../MonoTest/MonoTest/bin/Release/MonoRuntime; sourceTree = "<group>"; };
+		50FD3B9D14A376C800294B77 /* MonoTest.dll */ = {isa = PBXFileReference; lastKnownFileType = file; name = MonoTest.dll; path = ../MonoTest/MonoTest/bin/Release/MonoTest.dll; sourceTree = "<group>"; };
+		50FD3BA714A3B8F900294B77 /* libmono-2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libmono-2.0.a"; path = "../../mono-runtime-install/lib/libmono-2.0.a"; sourceTree = "<group>"; };
+		50FD3BA914A3BAF200294B77 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50FD3B7914A34B6E00294B77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD3BAA14A3BAF200294B77 /* libiconv.2.dylib in Frameworks */,
+				50FD3B8114A34B6E00294B77 /* UIKit.framework in Frameworks */,
+				50FD3B8314A34B6E00294B77 /* Foundation.framework in Frameworks */,
+				50FD3B9814A3763500294B77 /* libgac.a in Frameworks */,
+				50FD3B9914A3763700294B77 /* MonoTest.dll.a in Frameworks */,
+				50FD3B9A14A3763700294B77 /* mscorlib.dll.a in Frameworks */,
+				50FD3BA814A3B8FA00294B77 /* libmono-2.0.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50FD3B7114A34B6D00294B77 = {
+			isa = PBXGroup;
+			children = (
+				50FD3BA914A3BAF200294B77 /* libiconv.2.dylib */,
+				50FD3B9D14A376C800294B77 /* MonoTest.dll */,
+				50FD3B9B14A3767A00294B77 /* MonoRuntime */,
+				50FD3B8414A34B6E00294B77 /* iOSMonoTest */,
+				50FD3B7F14A34B6E00294B77 /* Frameworks */,
+				50FD3B7D14A34B6E00294B77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50FD3B7D14A34B6E00294B77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FD3B7C14A34B6E00294B77 /* iOSMonoTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FD3B7F14A34B6E00294B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50FD3BA714A3B8F900294B77 /* libmono-2.0.a */,
+				50FD3B9514A3763300294B77 /* libgac.a */,
+				50FD3B9614A3763300294B77 /* MonoTest.dll.a */,
+				50FD3B9714A3763300294B77 /* mscorlib.dll.a */,
+				50FD3B8014A34B6E00294B77 /* UIKit.framework */,
+				50FD3B8214A34B6E00294B77 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50FD3B8414A34B6E00294B77 /* iOSMonoTest */ = {
+			isa = PBXGroup;
+			children = (
+				50FD3B8D14A34B6E00294B77 /* AppDelegate.h */,
+				50FD3B8E14A34B6E00294B77 /* AppDelegate.m */,
+				50FD3B8514A34B6E00294B77 /* Supporting Files */,
+			);
+			path = iOSMonoTest;
+			sourceTree = "<group>";
+		};
+		50FD3B8514A34B6E00294B77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50FD3B8614A34B6E00294B77 /* iOSMonoTest-Info.plist */,
+				50FD3B8714A34B6E00294B77 /* InfoPlist.strings */,
+				50FD3B8A14A34B6E00294B77 /* main.m */,
+				50FD3B8C14A34B6E00294B77 /* iOSMonoTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50FD3B7B14A34B6E00294B77 /* iOSMonoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FD3B9214A34B6E00294B77 /* Build configuration list for PBXNativeTarget "iOSMonoTest" */;
+			buildPhases = (
+				50FD3B7814A34B6E00294B77 /* Sources */,
+				50FD3B7914A34B6E00294B77 /* Frameworks */,
+				50FD3B7A14A34B6E00294B77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSMonoTest;
+			productName = iOSMonoTest;
+			productReference = 50FD3B7C14A34B6E00294B77 /* iOSMonoTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50FD3B7314A34B6D00294B77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 50FD3B7614A34B6D00294B77 /* Build configuration list for PBXProject "iOSMonoTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50FD3B7114A34B6D00294B77;
+			productRefGroup = 50FD3B7D14A34B6E00294B77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50FD3B7B14A34B6E00294B77 /* iOSMonoTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50FD3B7A14A34B6E00294B77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD3B8914A34B6E00294B77 /* InfoPlist.strings in Resources */,
+				50FD3B9C14A3767A00294B77 /* MonoRuntime in Resources */,
+				50FD3B9E14A376C800294B77 /* MonoTest.dll in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50FD3B7814A34B6E00294B77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD3B8B14A34B6E00294B77 /* main.m in Sources */,
+				50FD3B8F14A34B6E00294B77 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50FD3B8714A34B6E00294B77 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FD3B8814A34B6E00294B77 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50FD3B9014A34B6E00294B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../mono-runtime-install/include/mono-2.0\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50FD3B9114A34B6E00294B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../../mono-runtime-install/include/mono-2.0\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50FD3B9314A34B6E00294B77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSMonoTest/iOSMonoTest-Prefix.pch";
+				INFOPLIST_FILE = "iOSMonoTest/iOSMonoTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MonoTest/MonoTest/bin/Release\"",
+					"\"$(SRCROOT)/../../mono-runtime-install/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50FD3B9414A34B6E00294B77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSMonoTest/iOSMonoTest-Prefix.pch";
+				INFOPLIST_FILE = "iOSMonoTest/iOSMonoTest-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MonoTest/MonoTest/bin/Release\"",
+					"\"$(SRCROOT)/../../mono-runtime-install/lib\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50FD3B7614A34B6D00294B77 /* Build configuration list for PBXProject "iOSMonoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FD3B9014A34B6E00294B77 /* Debug */,
+				50FD3B9114A34B6E00294B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FD3B9214A34B6E00294B77 /* Build configuration list for PBXNativeTarget "iOSMonoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FD3B9314A34B6E00294B77 /* Debug */,
+				50FD3B9414A34B6E00294B77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50FD3B7314A34B6D00294B77 /* Project object */;
+}
